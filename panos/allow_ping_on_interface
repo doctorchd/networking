@@ -1,0 +1,10 @@
+admin@PA-VM> configure
+
+
+admin@PA-VM# set network profiles interface-management-profile allow_ping ping yes
+
+admin@PA-VM# set network interface ethernet ethernet1/1 layer3 interface-management-profile allow_ping
+admin@PA-VM# set network interface ethernet ethernet1/2 layer3 interface-management-profile allow_ping
+
+admin@PA-VM# commit
+
